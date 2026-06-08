@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Learning Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px;
+            background: #f0f0f0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My JavaScript Learning!</h1>
+    <p id="message">Click the button below:</p>
+    <button id="myBtn">Click Me</button>
+
+    <script>
+        const btn = document.getElementById('myBtn');
+        const message = document.getElementById('message');
+        let clickCount = 0;
+
+        btn.addEventListener('click', function() {
+            clickCount++;
+            message.textContent = `You've clicked ${clickCount} times!`;
+        });
+    </script>
+</body>
+</html>
