@@ -1,65 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Tiny Plants - Welcome</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        h1 {
-            color: #2d5016;
-            text-align: center;
-        }
-        .intro {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        button {
-            background-color: #2d5016;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-top: 10px;
-        }
-        button:hover {
-            background-color: #1e3a0d;
-        }
-        #message {
-            margin-top: 15px;
-            font-size: 18px;
-            color: #2d5016;
-        }
-    </style>
-</head>
-<body>
-    <h1>🌱 Welcome to Tiny Plants</h1>
-    
-    <div class="intro">
-        <p>This is your learning project! You're building a real website on your own domain.</p>
-        <p>Click the button below to see JavaScript in action:</p>
-        
-        <button id="welcomeBtn">Click Me!</button>
-        <div id="message"></div>
+  <head>
+    <title>Tiny Plants - About & Gallery</title>
+  </head>
+  <body>
+
+    <!-- ABOUT SECTION -->
+    <div>
+      <h1>About Tiny Plants</h1>
+      <p>I have been a plant enthusiast for many years. Particularly cultivating and growing cacti from seed. I plan to offer healthy cuttings for people so they can grow them on.</p>
     </div>
 
-    <script>
-        const btn = document.getElementById('welcomeBtn');
-        const message = document.getElementById('message');
-        let clickCount = 0;
+    <!-- GALLERY SECTION -->
+    <div>
+      <h2>Our Plants</h2>
+      
+      <!-- PLANT 1: Crassula Ovata -->
+      <div>
+        <h3>Crassula Ovata</h3>
+        <img src="placeholder-image-url-here" alt="Crassula Ovata jade plant" />
+        <p>Type: Write here if bare rooted or cutting</p>
+        <p>Description: Write a brief description of this plant variety</p>
+      </div>
 
-        btn.addEventListener('click', function() {
-            clickCount++;
-            message.textContent = `You've clicked ${clickCount} times! Great job learning.`;
-        });
-    </script>
-</body>
+      <!-- PLANT 2: Hobbit Jade -->
+      <div>
+        <h3>Hobbit Jade</h3>
+        <img src="placeholder-image-url-here" alt="Hobbit Jade plant" />
+        <p>Type: Write here if bare rooted or cutting</p>
+        <p>Description: Write a brief description of this plant variety</p>
+      </div>
+
+      <!-- PLANT 3: Gollum Jade -->
+      <div>
+        <h3>Gollum Jade</h3>
+        <img src="placeholder-image-url-here" alt="Gollum Jade plant" />
+        <p>Type: Write here if bare rooted or cutting</p>
+        <p>Description: Write a brief description of this plant variety</p>
+      </div>
+
+    </div>
+
+  </body>
 </html>
